@@ -4,7 +4,7 @@ load("Final_data.RData")
 main_dat <- main_dat[!is.na(main_dat$rating), ]
 
 std <- sort(unique(main_dat$Studio))
-std <- std[-1]
+std <- std[-1] #removing the row with empty/no ("") studio name
 Mean_ratings <- numeric(length(std))
 
 for(i in 1:length(std)){
