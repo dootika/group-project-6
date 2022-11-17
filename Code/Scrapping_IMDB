@@ -2,7 +2,7 @@ library(rvest)
 library(tidyverse)
 
 #getting names, ratings, and votes From imdb by web scrapping
-#################
+
 
 html <- read_html("https://www.imdb.com/search/keyword/?keywords=anime&sort=moviemeter,asc&mode=detail&page=1&ref_=kw_nxt")
 names <- html %>% html_elements("img") %>% html_attr("alt")
