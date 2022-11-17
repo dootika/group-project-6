@@ -1,7 +1,7 @@
 #importing Datasets Uploaded on github
 
-dat1 <- as.data.frame(read.csv("Anime.csv"))
-dat2 <-as.data.frame(read.csv("anime_2.csv"))
+dat1 <- as.data.frame(read.csv("Anime.csv")) #Having dataset from MAL
+dat2 <-as.data.frame(read.csv("anime_2.csv")) # dataset rom Anime planet
 dat1 <- dat1[, -c(1, 7, 8, 11:14, 16, 17)]
 dat1$Japanese_name <- str_remove(dat1$Japanese_name, " ") # extra space was unnessary
 
