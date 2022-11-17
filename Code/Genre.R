@@ -11,7 +11,7 @@ dat1$Japanese_name <- str_remove(dat1$Japanese_name, " ") # extra space was unne
 
 Genre_rat <- subset(dat2[, c(3, 6)])
 Genre_rat$genre <- str_remove_all(Genre_rat$genre , " ")
-Genre_rat$genre <- strsplit(Genre_rat$genre, ",")
+Genre_rat$genre <- strsplit(Genre_rat$genre, ",") #turning a list into sub list of genres
 
 #making a vector with all 18+ rating genres, these contain extreme bloodshed, gore...
 r18 <- c("Hentai", "Ecchi", "ShoujoAi", "Yuri", "ShounenAi", "Yaoi")
