@@ -1,3 +1,4 @@
+library(tidyverse)
 #importing Datasets Uploaded on github
 
 dat1 <- as.data.frame(read.csv("Anime.csv")) #Having dataset from Anime planet
