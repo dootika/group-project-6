@@ -1,4 +1,5 @@
 library(shiny)
+library(plotly)
 library(wordcloud)
 library(RColorBrewer)
 library(shinythemes)
@@ -38,12 +39,15 @@ navbarPage("Anime", theme = shinytheme("darkly"),
                        
                        sidebarLayout(
                          sidebarPanel(
+                           sliderInput("rat", 
+                                       "Select range of ratings for genres:",
+                                       0, 10, step = 0.1, c(0, 10)),
                            sliderInput("freq",
                                        "Minimum Frequency of Anime:",
                                        min = 1,  max = 2000 , step = 1,  value = 10),
                            sliderInput("max",
                                        "Maximum genre:",
-                                       min = 1 ,  max = 45, step = 1, value = 30)
+                                       min = 1 ,  max = 40, step = 1, value = 30)
                          ),
                          # Show Word Cloud
                          mainPanel(

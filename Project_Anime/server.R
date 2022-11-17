@@ -8,7 +8,7 @@
 #
 library(rvest)
 library(shiny)
-load("Genre_vs_Rating(MAL)")
+load("Genre_vs_Rating(MAL).RData")
 load("Genre.RData")
 load("Final_data.RData")
 
@@ -65,6 +65,9 @@ shinyServer(function(input, output) {
    })
    
    output$plot <- renderPlot({
+     
+     genre <- genre[which( (genre$avg_rat <=input$rat[2]) & (genre$avg_rat >=input$rat[1]) ), ]
+     
      wordcloud(words = genre$genre, freq = genre$Freq, scale = c(3,1),
                min.freq = input$freq , max.words = input$max ,
                colors = brewer.pal(8,"Accent"))
