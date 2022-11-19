@@ -1,4 +1,5 @@
 library(tidyverse)
+setwd("Datasets")
 #importing Datasets Uploaded on github
 
 dat1 <- as.data.frame(read.csv("Anime.csv"))
