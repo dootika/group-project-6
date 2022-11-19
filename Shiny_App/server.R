@@ -7,7 +7,7 @@ load("Final_data.RData")
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
     
-  
+#histPlot#####
    output$histPlot <- renderPlot({
     if( "All" %in% input$genres){
       
@@ -32,7 +32,7 @@ shinyServer(function(input, output) {
              main = "Histogram of Ratings of selected Genres")
     }
   })
-   
+#summary####   
    output$summary <- renderPrint({
      if( "All" %in% input$genres){
        
@@ -55,7 +55,7 @@ shinyServer(function(input, output) {
      }
      
    })
-   
+#plot####   
    output$plot <- renderPlot({
      
      genre <- genre[which( (genre$avg_rat <=input$rat[2]) & (genre$avg_rat >=input$rat[1]) ), ]
@@ -66,7 +66,7 @@ shinyServer(function(input, output) {
    })
    
 
-   
+#scat####   
    output$scatt <- renderPlotly({
      
      load("Final_data.RData")
@@ -90,7 +90,7 @@ shinyServer(function(input, output) {
      
    })
    
-   
+#graph####   
    output$graph <- renderPlot({
      
      load("Final_data.RData")
@@ -113,9 +113,7 @@ shinyServer(function(input, output) {
 
           legend(x = "topleft", legend = sort(unique(main_dat$type)),
                  fill = 1:length(unique(main_dat$type)))
-         # lines(lowess(main_dat$rating, main_dat$members), col = "red", lwd = 3)
+         # lines(lowess(main_dat$rating, main_dat$members), col = "red", lwd = 3) # best fit line removed
    })
 
 })
-
-
