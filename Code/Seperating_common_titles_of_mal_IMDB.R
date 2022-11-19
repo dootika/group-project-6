@@ -1,3 +1,4 @@
+setwd("Datasets")
 load("IMDB.RData") # as df
 load("Final_data.RData") # as main_dat(from mal)
 
