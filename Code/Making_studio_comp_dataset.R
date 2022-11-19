@@ -20,3 +20,4 @@ colnames(std_rat) <- c("Studio Name", "Avg rating of Anime produced", "No. of An
 std_rat <- std_rat[which(std_rat[, 3] > 3), ]
 
 save(std_rat, file = "Studio_comparison.RData")
+setwd("..")
