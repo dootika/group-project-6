@@ -43,3 +43,4 @@ names <- names[-c(59, 78, 260, 265, 324, 354, 410, 419, 465, 471)]   # removing 
                                                                      # released only in Japan/or upcoming therefore rating and votes doesn't exists
 df <- data.frame(names, ratings, votes)
 save(df, file = "IMDB.RData") # saving data frame
+setwd("..")
