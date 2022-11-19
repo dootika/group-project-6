@@ -56,3 +56,4 @@ for(i in 1:length(genre$genre)){
 }
 genre <- data.frame(genre, avg_rat)
 save(genre, file = "Genre.RData") 
+setwd("..")
