@@ -43,3 +43,4 @@ for(i in 5:10){
 }
 
 save(main_dat, file = "Final_data.RData")
+setwd("..")
