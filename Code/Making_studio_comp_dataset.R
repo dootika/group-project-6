@@ -1,4 +1,5 @@
 #Studio Analysis
+setwd("Datasets")
 load("Final_data.RData")
 
 main_dat <- main_dat[!is.na(main_dat$rating), ]
