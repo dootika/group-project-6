@@ -1,5 +1,6 @@
 library(rvest)
 library(tidyverse)
+setwd("Datasets")
 
 #getting names, ratings, and votes From imdb by web scrapping
 
