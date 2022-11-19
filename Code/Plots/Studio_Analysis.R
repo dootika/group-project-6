@@ -1,5 +1,6 @@
 #Studio analysis
 library(plotly)
+setwd("Plots/Data")
 load("Studio_comparison.RData") # as std_rat
 
 #Studio and their avg rating
@@ -23,3 +24,5 @@ plot_ly(
 ) %>%
   layout(title = 'STUDIO analysis', plot_bgcolor = "#e5ecf6", xaxis = list(title = "Avg rating of Anime produced"), 
          yaxis = list(title = "No. of Anime produced"))
+
+setwd("../..")
