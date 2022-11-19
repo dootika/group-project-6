@@ -1,4 +1,5 @@
 library(plotly)
+setwd("Plots/Data")
 load("Common_titles_from_MAL.RData")
 load("Common_titles_from_IMDB.RData")
 
@@ -26,3 +27,5 @@ plot_ly() %>%
   ) %>%
   layout(title = 'Rating comparision', plot_bgcolor = "#e5ecf6", xaxis = list(title = 'MAL ratings'), 
          yaxis = list(title = 'IMDB ratings'))
+
+setwd("../..")
