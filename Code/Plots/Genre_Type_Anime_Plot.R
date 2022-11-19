@@ -1,6 +1,6 @@
 library(ggplot2)
 library(plotly)
-
+setwd("Plots/Data")
 
 # Top Genres Bar Plot
 
@@ -37,12 +37,4 @@ fig <- fig %>% layout(title = list(text = 'Types of Anime',y = 0.98, x = 0.5,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
-
-
-
-
-
-
-
-
-
+setwd("../..")
