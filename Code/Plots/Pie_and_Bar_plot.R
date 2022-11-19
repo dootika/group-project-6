@@ -1,7 +1,7 @@
 library(ggplot2)
 library(plotly)
 setwd("Plots/Data")
-
+load("Genre.RData")
 # Top Genres Bar Plot
 
 data <- genre
