@@ -1,0 +1,7 @@
+install.packages("plotly")
+install.packages("wordcloud")
+install.packages("RColorBrewer")
+install.packages("shinythemes")
+install.packages("rvest")
+install.packages("tidyverse")
+install.packages("ggplot2")
