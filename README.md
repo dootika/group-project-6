@@ -1,4 +1,4 @@
-# Anime(Japanese animation) Analysis
+# Anime Analysis
 
 ## Instruction to run the code:
-- If while running the code you run into `library not installed` error then please uncomment the first few lines of code and run them first.
+- If while running the code you run into `package not installed` error then please uncomment the first few lines of code and run them first.
