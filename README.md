@@ -12,4 +12,4 @@ This is the project of group - 6 for the course MTH208. In this project we have 
 
 ## Instruction to run the code:
 - For running code please set the respectove parent folder as working directory, e.g. if I want to run `Genre.R` file in Code folder I'll set "code"(my parent folder in this case) as my working directory. 
-- If while running the code you run into `there is no package called ....` error then kindly run the `Required Packages` file first to download required packages used in the code.
+- If while running the code you run into `there is no package called ....` error then kindly run the `Required_packages.R` file first to download required packages used in the code.
