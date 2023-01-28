@@ -1,9 +1,4 @@
-# Project Anime
+# Anime(Japanese animation) Analysis
 
-While running .R file in code folder please set diectory to "Code".
-
-Also while running file in plot folder set working directory to "Code".
-
-While running .rmd file of report please download and select report "Report" folder as working directory. 
-
-The code for plots in shiny app are not written seperately in "Code/Plots"
+## Instruction to run the code:
+- If while running the code you run into `library not installed` error then please uncomment the first few lines of code and run them first.
