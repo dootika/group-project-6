@@ -6,7 +6,7 @@ This is the project of group - 6 for the course MTH208. In this project we have 
 ## Contents
 - **Code : **Contains all the code for scrapping data, cleaning datasets, combining 2 datasets and making plots.
 - The **presentation** includes the ppt file we created to explain our analysis, as well as a brief video demonstration of our app on the final slide.
-- The **report** folder in the project contains a markdown file that contains all the results and conclusion from the data analysis we performed. The html format of the report is more interactive than the pdf format.
+- The **report** folder in the project contains a markdown file that contains all the results and conclusion from the data analysis we performed. The html format of the report is also even interactive.
 - **Shiny App :** Shiny is a R package that makes it easier to build interactive web pages from R. Here is the [link](https://shabadpreet.shinyapps.io/shiny_app/) to oue app which is hosted online on [Shinyapps.io](https://shinyapps.io). All it's code can be found in the above **Shiny App** folder. To run the app using code kindly download whole shiny app folder and run any of `server.R` or `ui.R` file in it. 
 > In app the graphs in "Combined Plot" section might take some time to load but they'll load eventually, and in there the ggplot provided is interactive as you can zoom in/out and hover over the points to get more information about them.
 
